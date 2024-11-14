@@ -1,0 +1,946 @@
+@import '_style.scss';
+@mixin boxxx-design()
+{
+    border: 1px solid black;
+    .item
+    {
+        height: 120px;
+        width: 120px;
+        margin-left: 30px;
+        background-image: url(wt.webp);
+        background-size: cover;
+
+    }
+    .details
+    {
+        height:59px ;
+        width: 100%;
+        font-size: 12px;
+        padding-left: 20px;
+        margin-top: 10px;
+
+        p
+        {
+            span
+            {
+                text-decoration: line-through;
+            }
+        }
+
+        
+    }
+}
+@mixin item-design()
+{
+    border: 1px solid black;
+    .item
+    {
+        height: 160px;
+        width: 100%;
+        background-image: url(wt.webp);
+        background-size: cover;
+
+        .offer
+        {
+            height: 10px;
+            width: 40px;
+            background-color: green;
+            font-size: 10px;
+            padding: 5px;
+            border-radius: 20px;
+            position: absolute;
+            top: 150px;
+
+            
+        }
+    }
+    .details
+    {
+        height:59px ;
+        width: 100%;
+        font-size: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+
+        p
+        {
+            span
+            {
+                text-decoration: line-through;
+            }
+        }
+
+        
+    }
+}
+@mixin box-design()
+{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left:10px ;
+    height: 480px;
+    width: 330px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    .item1
+    {
+      @include item-design();
+    }
+    .item2
+    {
+      @include item-design();
+    }
+    .item3
+    {
+      @include item-design();
+    }
+    .item4
+    {
+      @include item-design();
+    }
+
+   
+}
+
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+   
+    .nav1
+    {
+    background-color: rgb(228, 246, 251);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+
+    img
+    {
+        height: 30px;
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 10px;
+        
+    }
+    input
+    {
+        width: 700px;
+        height: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: 20px;
+
+    }
+   
+  .rightnavicon
+  {
+   margin-left: 300px;
+   margin-top: 18px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   
+   a
+   {
+    text-decoration: none;
+    color: black;
+    i
+    {
+        padding-right: 10px;
+    }
+   }
+  }
+    }
+
+    .nav2
+    {
+       @include nav2-design();
+    }
+}
+.main
+{
+    height: 1200px;
+    width: 100%;
+    background-color: rgb(228, 246, 251);
+
+    .slide
+    {
+        height: 600px;
+        width: 100%;
+        margin-top: 20px;
+        background-image: url(animationimage1.jpg);
+        background-size: cover;
+        animation-name: slide1;
+        animation-duration: 30s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes slide1 {
+        0%
+        {
+             background-image: url(animationimage1.jpg);
+             background-size: cover;
+        }
+        25%
+        {
+            background-image: url(animationimage2.jpg);
+            background-size: cover;
+        }
+        50%
+        {
+            background-image: url(animationimage3.jpg);
+            background-size: cover;
+        }
+        75%
+        {
+            background-image: url(animationimage4.jpg);
+            background-size: cover;
+        }
+        100%
+        {
+            background-image: url(animationimage5.jpg);
+            background-size: cover;
+        }
+        
+    }
+
+    .box
+    {
+        position: absolute;
+        top: 350px;
+        height: 500px;
+        width: 100%;
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: 50px;
+      
+        .box1
+        {
+           @include box-design();
+           .item3
+           {
+             .offer
+             {
+                margin-top: 240px;
+             }
+           }
+           .item4
+           {
+             .offer
+             {
+                margin-top: 240px;
+             }
+           }
+           .item2
+           {
+            .item
+            {
+                background-image: url(wt1.webp);
+            }
+           
+           }
+           .item3
+           {
+            .item
+            {
+                background-image: url(wt2.webp);
+            }
+           
+           }
+           .item4
+           {
+            .item
+            {
+                background-image: url(wt3.webp);
+            }
+           
+           }
+
+         }
+        
+        .box2
+        {
+          
+            @include box-design();
+            .item3
+            {
+              .offer
+              {
+                 margin-top: 240px;
+              }
+            }
+            .item4
+            {
+              .offer
+              {
+                 margin-top: 240px;
+              }
+            }
+            .item2
+            {
+             .item
+             {
+                 background-image: url(wt4.webp);
+             }
+            
+            }
+            .item3
+            {
+             .item
+             {
+                 background-image: url(wt5.webp);
+             }
+            
+            }
+            .item4
+            {
+             .item
+             {
+                 background-image: url(wt1.webp);
+             }
+            
+            }
+        }
+        .box3
+        {
+            @include box-design();
+            .item3
+            {
+              .offer
+              {
+                 margin-top: 240px;
+              }
+            }
+            .item4
+            {
+              .offer
+              {
+                 margin-top: 240px;
+              }
+            }
+            .item2
+            {
+             .item
+             {
+                 background-image: url(wt1.webp);
+             }
+            
+            }
+            .item3
+            {
+             .item
+             {
+                 background-image: url(wt2.webp);
+             }
+            
+            }
+            .item4
+            {
+             .item
+             {
+                 background-image: url(wt3.webp);
+             }
+            
+            }
+        
+        }
+        .box4
+        {
+            @include box-design();
+            .item3
+            {
+              .offer
+              {
+                 margin-top: 240px;
+              }
+            }
+            .item4
+            {
+              .offer
+              {
+                 margin-top: 240px;
+              }
+            }
+            .item2
+            {
+             .item
+             {
+                 background-image: url(wt4.webp);
+             }
+            
+            }
+            .item3
+            {
+             .item
+             {
+                 background-image: url(wt5.webp);
+             }
+            
+            }
+            .item4
+            {
+             .item
+             {
+                 background-image: url(wt1.webp);
+             }
+            
+            }
+          
+        }
+    }
+
+    .boxx
+    {
+        height: 170px;
+        width: 100%;
+        background-color: aquamarine;
+        
+
+      
+       
+    }
+    .boxxx
+    {
+        height: 420px;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(auto-fit,minmax(7,1fr));
+        gap: 10px 10px;
+
+        .box11
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt3.webp)
+           }
+        }
+        .box12
+        {
+           @include boxxx-design();
+        }
+        .box13
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt4.webp)
+           }
+        }
+        .box14
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt5.webp)
+           }
+        }
+        .box15
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt1.webp)
+           }
+        }
+        .box16
+        {
+           @include boxxx-design();
+        }
+        .box17
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt2.webp)
+           }
+        }
+        .box18
+        {
+           @include boxxx-design();
+        }
+        .box19
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt3.webp)
+           }
+        }
+        .box20
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt4.webp)
+           }
+        }
+        .box21
+        {
+           @include boxxx-design();
+        }
+        .box22
+        {
+           @include boxxx-design();
+        }
+        .box23
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt5.webp)
+           }
+        }
+        .box24
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt1.webp)
+           }
+        }
+        .box25
+        {
+           @include boxxx-design();
+           .item
+           {
+            background-image: url(wt2.webp)
+           }
+        }
+
+    }
+
+
+
+    
+}
+.mainbox
+{
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(4,1fr));
+
+    .box1
+    {
+    display: grid;
+    grid-template-rows: repeat(8, 30px);
+    padding-left: 20px;
+    
+    
+    h1
+    {
+        display: grid;
+        grid-template-rows: repeat(8, 30px);
+        padding-left: 0px;
+        margin-top: 0px;
+        
+        h1
+        {
+            font-size: 20px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            
+        }
+        a:hover
+        {
+            color: rgb(29, 149, 235);
+            font-size: 13px;
+        }
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        
+    }
+    a:hover
+    {
+        color: rgb(29, 149, 235);
+        font-size: 13px;
+    }
+    }
+    .box2
+    {
+        display: grid;
+        grid-template-rows: repeat(8, 30px);
+        padding-left: 20px;
+        
+        h1
+        {
+            font-size: 20px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            
+        }
+        a:hover
+        {
+            color: rgb(29, 149, 235);
+            font-size: 13px;
+        }
+    }
+    .box3
+    {
+        display: grid;
+        grid-template-rows: repeat(8, 30px);
+        padding-left: 20px;
+        
+        h1
+        {
+            font-size: 20px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            
+        }
+        a:hover
+        {
+            color: rgb(29, 149, 235);
+            font-size: 13px;
+        }
+    }
+    .box4
+    {
+        display: grid;
+        grid-template-rows: repeat(8, 30px);
+        padding-left: 20px;
+        
+        h1
+        {
+            font-size: 20px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            
+        }
+        a:hover
+        {
+            color: rgb(29, 149, 235);
+            font-size: 13px;
+        }
+    }
+}
+
+
+footer
+{
+    a
+    {
+        text-decoration: none;
+        size: 12px;
+        color:lightseagreen;
+        i
+        {
+            font-size: 15px;
+        }
+    }
+    .foot
+    {
+        height: 300px;
+        width: 100%;
+        display: grid;
+        border-top: 1px solid black;
+        grid-template-columns: repeat(4, 1fr);
+        .foot2
+        {
+            display: grid;
+            grid-template-rows: repeat(8, 30px);
+            padding-left: 20px;
+            
+            h1
+            {
+                font-size: 20px;
+            }
+            a
+            {
+                text-decoration: none;
+                color: black;
+                font-size: 12px;
+                
+            }
+            a:hover
+            {
+                color: rgb(29, 149, 235);
+                font-size: 13px;
+            }
+        }
+        .foot3
+        {
+            display: grid;
+    grid-template-rows: repeat(8, 30px);
+    padding-left: 20px;
+    
+    h1
+    {
+        font-size: 20px;
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        
+    }
+    a:hover
+    {
+        color: rgb(29, 149, 235);
+        font-size: 13px;
+    }
+        }
+        .foot1
+        {
+            
+            p
+            {
+             width: 100%;
+             height: 20px;
+             font-size: 10px;
+             margin-left: 30px;
+            }
+    
+            img
+            {
+                height: 50px;
+                width: 150px;
+                margin-left: 20px;
+                margin-top: 80px;
+                
+            }
+        }
+    }
+   
+}
+.foot4
+{
+    text-align: center;
+    h6
+    {
+        margin-top: 100px;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+    a
+    {
+    .download
+    {
+        height: 30px;
+        width: 80px;
+        background-color: rgb(237, 222, 222);
+        border-radius: 20px;
+        margin-left: 150px;
+        i
+        {
+            margin-top: 8px;
+        }
+    }
+}
+}
+@media (max-width:451px) {
+
+    nav
+    {
+        .nav1
+        {
+            img
+            {
+    
+                width: 100px;
+            }
+            input
+            {
+                width: 200px;
+            }
+            .rightnavicon
+            {
+                margin-left: 30px;
+                i
+                {
+                    font-size: 15px;
+                }
+            span
+            {
+                
+                display: none;
+                  
+                
+            }
+        }
+        }
+        .nav2
+        {
+            gap: 15px;
+            a
+            {
+                font-size: 10px;
+            }
+            span
+            {
+                display: none;
+            }
+        }
+    }
+    .main
+    {
+        height: 1200px;
+        width: 450px;
+        background-color: rgb(228, 246, 251);
+        background-size: contain;
+    
+        .slide
+        {
+            height: 300px;
+            width: 450px;
+            margin-top: 1px;
+            background-size: contain;
+            
+            
+        }
+        .box
+        {
+            margin-top: -120px;
+            .box1
+            {
+            
+                width: 400px;
+                margin-left: -20px;
+                gap: 10px;
+            }
+            .box2
+            {
+            
+                width: 400px;
+                margin-left: -20px;
+                gap: 10px;
+            }
+            .box3
+            {
+            
+                width: 400px;
+                margin-left: -20px;
+                gap: 10px;
+            }
+            .box4
+            {
+            
+                width: 400px;
+                margin-left: -20px;
+                gap: 10px;
+            }
+        }
+    
+    }
+    .boxx
+    {
+        margin-top: 1700px;
+        width: 450px;
+    }
+       .mainbox
+       {
+        width: 450px;
+        margin-top: 1500px;
+        
+        .box1
+        {
+        h1
+        {
+            font-size: 10px;
+        }
+    }
+        .box2
+        {
+    
+            line-height: 10px;
+            h1
+        {
+            font-size: 10px;
+        }
+        }
+        .box3
+        {
+            line-height: 15px;
+            h1
+        {
+            font-size: 10px;
+        }
+        }
+        .box4
+        {
+            line-height: 20px;
+            h1
+            {
+                font-size: 10px;
+            }
+        }
+       }
+       .foot
+       {
+       width: 450px;
+       .foot1
+       {
+         font-size: 10px;
+       }
+       .foot2
+       {
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 20px;
+    h1
+    {
+        font-size: 10px;
+    }
+       }
+       .foot3
+       {
+        margin-left: 30px;
+        margin-top: 20px;
+        line-height: 10px;
+      
+         h1
+         {
+            font-size: 10px;
+         }
+       }
+       .foot4
+       {
+        margin-top: 200px;
+        margin-left: -300px;
+        padding-bottom: 50px;
+       }
+    
+    }
+    }
+    
