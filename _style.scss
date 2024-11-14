@@ -1,0 +1,228 @@
+@mixin box-design()
+{
+    display: grid;
+    grid-template-rows: repeat(8, 30px);
+    padding-left: 20px;
+    
+    h1
+    {
+        font-size: 20px;
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        
+    }
+    a:hover
+    {
+        color: rgb(29, 149, 235);
+        font-size: 13px;
+    }
+}
+
+@mixin footbox-design()
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(8, 30px);
+    padding-left: 20px;
+    
+    h1
+    {
+        font-size: 20px;
+        
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+
+        
+    }
+}
+@mixin footer2-design()
+{
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(4,1fr));
+
+    .box1
+    {
+        @include box-design();
+      
+    }
+    .box2
+    {
+        @include box-design();
+    }
+    .box3
+    {
+        @include box-design();
+    }
+    .box4
+    {
+        @include box-design();
+    }
+}
+@mixin footer-design()
+{
+    a
+    {
+        text-decoration: none;
+        size: 12px;
+        color:lightseagreen;
+        i
+        {
+            font-size: 15px;
+        }
+    }
+    .foot
+    {
+        height: 300px;
+        width: 100%;
+        display: grid;
+        border-top: 1px solid black;
+        grid-template-columns: repeat(4, 1fr);
+        .foot2
+        {
+            @include footbox-design();
+        }
+        .foot3
+        {
+            @include footbox-design();
+        }
+        .foot1
+        {
+            
+            p
+            {
+             width: 100%;
+             height: 20px;
+             font-size: 10px;
+             margin-left: 30px;
+            }
+    
+            img
+            {
+                height: 50px;
+                width: 150px;
+                margin-left: 20px;
+                margin-top: 80px;
+                
+            }
+        }
+    }
+   
+}
+.foot4
+{
+    text-align: center;
+    h6
+    {
+        margin-top: 100px;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+    a
+    {
+    .download
+    {
+        height: 30px;
+        width: 80px;
+        background-color: rgb(237, 222, 222);
+        border-radius: 20px;
+        margin-left: 150px;
+        i
+        {
+            margin-top: 8px;
+        }
+    }
+}
+}
+@mixin nav1-design()
+{
+    background-color: rgb(228, 246, 251);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
+
+    img
+    {
+        height: 30px;
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 10px;
+        
+    }
+    input
+    {
+        width: 700px;
+        height: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: 20px;
+
+    }
+   
+  .rightnavicon
+  {
+   margin-left: 300px;
+   margin-top: 18px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   
+   a
+   {
+    text-decoration: none;
+    color: black;
+    i
+    {
+        padding-right: 10px;
+    }
+   }
+  }
+}
+@mixin nav2-design()
+{
+    
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-top: 60px;
+   
+    input
+    {
+    display: none;
+    cursor:progress;
+    }
+    a
+    {
+        font-size: 20px;
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+
+        i
+        {
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+    }
+   
+}
+/*------------------------------------=---------------------------------------*/
+
+ 
