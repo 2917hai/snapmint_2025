@@ -1,0 +1,1334 @@
+.foot4 {
+  text-align: center;
+}
+.foot4 h6 {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.foot4 a .download {
+  height: 30px;
+  width: 80px;
+  background-color: rgb(237, 222, 222);
+  border-radius: 20px;
+  margin-left: 150px;
+}
+.foot4 a .download i {
+  margin-top: 8px;
+}
+
+/*------------------------------------=---------------------------------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav .nav1 {
+  background-color: rgb(228, 246, 251);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+nav .nav1 img {
+  height: 30px;
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+nav .nav1 input {
+  width: 700px;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+nav .nav1 .rightnavicon {
+  margin-left: 300px;
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+nav .nav1 .rightnavicon a {
+  text-decoration: none;
+  color: black;
+}
+nav .nav1 .rightnavicon a i {
+  padding-right: 10px;
+}
+nav .nav2 {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-top: 60px;
+}
+nav .nav2 input {
+  display: none;
+  cursor: progress;
+}
+nav .nav2 a {
+  font-size: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+nav .nav2 a i {
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.main {
+  height: 1200px;
+  width: 100%;
+  background-color: rgb(228, 246, 251);
+}
+.main .slide {
+  height: 600px;
+  width: 100%;
+  margin-top: 20px;
+  background-image: url(animationimage1.jpg);
+  background-size: cover;
+  animation-name: slide1;
+  animation-duration: 30s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes slide1 {
+  0% {
+    background-image: url(animationimage1.jpg);
+    background-size: cover;
+  }
+  25% {
+    background-image: url(animationimage2.jpg);
+    background-size: cover;
+  }
+  50% {
+    background-image: url(animationimage3.jpg);
+    background-size: cover;
+  }
+  75% {
+    background-image: url(animationimage4.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(animationimage5.jpg);
+    background-size: cover;
+  }
+}
+.main .box {
+  position: absolute;
+  top: 350px;
+  height: 500px;
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 50px;
+}
+.main .box .box1 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 480px;
+  width: 330px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.main .box .box1 .item1 {
+  border: 1px solid black;
+}
+.main .box .box1 .item1 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box1 .item1 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box1 .item1 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box1 .item1 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box1 .item2 {
+  border: 1px solid black;
+}
+.main .box .box1 .item2 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box1 .item2 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box1 .item2 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box1 .item2 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box1 .item3 {
+  border: 1px solid black;
+}
+.main .box .box1 .item3 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box1 .item3 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box1 .item3 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box1 .item3 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box1 .item4 {
+  border: 1px solid black;
+}
+.main .box .box1 .item4 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box1 .item4 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box1 .item4 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box1 .item4 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box1 .item3 .offer {
+  margin-top: 240px;
+}
+.main .box .box1 .item4 .offer {
+  margin-top: 240px;
+}
+.main .box .box1 .item2 .item {
+  background-image: url(mixer1.webp);
+}
+.main .box .box1 .item3 .item {
+  background-image: url(mixer2.webp);
+}
+.main .box .box1 .item4 .item {
+  background-image: url(mixer3.webp);
+}
+.main .box .box2 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 480px;
+  width: 330px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.main .box .box2 .item1 {
+  border: 1px solid black;
+}
+.main .box .box2 .item1 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box2 .item1 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box2 .item1 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box2 .item1 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box2 .item2 {
+  border: 1px solid black;
+}
+.main .box .box2 .item2 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box2 .item2 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box2 .item2 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box2 .item2 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box2 .item3 {
+  border: 1px solid black;
+}
+.main .box .box2 .item3 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box2 .item3 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box2 .item3 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box2 .item3 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box2 .item4 {
+  border: 1px solid black;
+}
+.main .box .box2 .item4 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box2 .item4 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box2 .item4 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box2 .item4 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box2 .item3 .offer {
+  margin-top: 240px;
+}
+.main .box .box2 .item4 .offer {
+  margin-top: 240px;
+}
+.main .box .box2 .item2 .item {
+  background-image: url(mixer4.webp);
+}
+.main .box .box2 .item3 .item {
+  background-image: url(mixer5.webp);
+}
+.main .box .box2 .item4 .item {
+  background-image: url(mixer1.webp);
+}
+.main .box .box3 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 480px;
+  width: 330px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.main .box .box3 .item1 {
+  border: 1px solid black;
+}
+.main .box .box3 .item1 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box3 .item1 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box3 .item1 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box3 .item1 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box3 .item2 {
+  border: 1px solid black;
+}
+.main .box .box3 .item2 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box3 .item2 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box3 .item2 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box3 .item2 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box3 .item3 {
+  border: 1px solid black;
+}
+.main .box .box3 .item3 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box3 .item3 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box3 .item3 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box3 .item3 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box3 .item4 {
+  border: 1px solid black;
+}
+.main .box .box3 .item4 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box3 .item4 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box3 .item4 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box3 .item4 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box3 .item3 .offer {
+  margin-top: 240px;
+}
+.main .box .box3 .item4 .offer {
+  margin-top: 240px;
+}
+.main .box .box3 .item2 .item {
+  background-image: url(mixer2.webp);
+}
+.main .box .box3 .item3 .item {
+  background-image: url(mixer3.webp);
+}
+.main .box .box3 .item4 .item {
+  background-image: url(mixer4.webp);
+}
+.main .box .box4 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 480px;
+  width: 330px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.main .box .box4 .item1 {
+  border: 1px solid black;
+}
+.main .box .box4 .item1 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box4 .item1 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box4 .item1 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box4 .item1 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box4 .item2 {
+  border: 1px solid black;
+}
+.main .box .box4 .item2 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box4 .item2 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box4 .item2 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box4 .item2 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box4 .item3 {
+  border: 1px solid black;
+}
+.main .box .box4 .item3 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box4 .item3 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box4 .item3 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box4 .item3 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box4 .item4 {
+  border: 1px solid black;
+}
+.main .box .box4 .item4 .item {
+  height: 160px;
+  width: 100%;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .box .box4 .item4 .item .offer {
+  height: 10px;
+  width: 40px;
+  background-color: green;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+.main .box .box4 .item4 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.main .box .box4 .item4 .details p span {
+  text-decoration: line-through;
+}
+.main .box .box4 .item3 .offer {
+  margin-top: 240px;
+}
+.main .box .box4 .item4 .offer {
+  margin-top: 240px;
+}
+.main .box .box4 .item2 .item {
+  background-image: url(mixer5.webp);
+}
+.main .box .box4 .item3 .item {
+  background-image: url(mixer1.webp);
+}
+.main .box .box4 .item4 .item {
+  background-image: url(mixer2.webp);
+}
+.main .boxx {
+  height: 170px;
+  width: 100%;
+  background-color: aquamarine;
+}
+.main .boxxx {
+  height: 420px;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(7, 1fr));
+  gap: 10px 10px;
+}
+.main .boxxx .box11 {
+  border: 1px solid black;
+}
+.main .boxxx .box11 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box11 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box11 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box11 .item {
+  background-image: url(mixer3.webp);
+}
+.main .boxxx .box12 {
+  border: 1px solid black;
+}
+.main .boxxx .box12 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box12 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box12 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box13 {
+  border: 1px solid black;
+}
+.main .boxxx .box13 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box13 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box13 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box13 .item {
+  background-image: url(mixer4.webp);
+}
+.main .boxxx .box14 {
+  border: 1px solid black;
+}
+.main .boxxx .box14 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box14 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box14 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box14 .item {
+  background-image: url(mixer5.webp);
+}
+.main .boxxx .box15 {
+  border: 1px solid black;
+}
+.main .boxxx .box15 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box15 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box15 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box15 .item {
+  background-image: url(mixer1.webp);
+}
+.main .boxxx .box16 {
+  border: 1px solid black;
+}
+.main .boxxx .box16 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box16 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box16 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box17 {
+  border: 1px solid black;
+}
+.main .boxxx .box17 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box17 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box17 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box17 .item {
+  background-image: url(mixer2.webp);
+}
+.main .boxxx .box18 {
+  border: 1px solid black;
+}
+.main .boxxx .box18 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box18 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box18 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box19 {
+  border: 1px solid black;
+}
+.main .boxxx .box19 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box19 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box19 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box19 .item {
+  background-image: url(mixer3.webp);
+}
+.main .boxxx .box20 {
+  border: 1px solid black;
+}
+.main .boxxx .box20 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box20 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box20 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box20 .item {
+  background-image: url(mixer4.webp);
+}
+.main .boxxx .box21 {
+  border: 1px solid black;
+}
+.main .boxxx .box21 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box21 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box21 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box22 {
+  border: 1px solid black;
+}
+.main .boxxx .box22 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box22 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box22 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box23 {
+  border: 1px solid black;
+}
+.main .boxxx .box23 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box23 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box23 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box23 .item {
+  background-image: url(mixer5.webp);
+}
+.main .boxxx .box24 {
+  border: 1px solid black;
+}
+.main .boxxx .box24 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box24 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box24 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box24 .item {
+  background-image: url(mixer1.webp);
+}
+.main .boxxx .box25 {
+  border: 1px solid black;
+}
+.main .boxxx .box25 .item {
+  height: 120px;
+  width: 120px;
+  margin-left: 30px;
+  background-image: url(mixer.webp);
+  background-size: cover;
+}
+.main .boxxx .box25 .details {
+  height: 59px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.main .boxxx .box25 .details p span {
+  text-decoration: line-through;
+}
+.main .boxxx .box25 .item {
+  background-image: url(mixer2.webp);
+}
+
+.mainbox {
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
+}
+.mainbox .box1 {
+  display: grid;
+  grid-template-rows: repeat(8, 30px);
+  padding-left: 20px;
+}
+.mainbox .box1 h1 {
+  display: grid;
+  grid-template-rows: repeat(8, 30px);
+  padding-left: 0px;
+  margin-top: 0px;
+}
+.mainbox .box1 h1 h1 {
+  font-size: 20px;
+}
+.mainbox .box1 h1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+.mainbox .box1 h1 a:hover {
+  color: rgb(29, 149, 235);
+  font-size: 13px;
+}
+.mainbox .box1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+.mainbox .box1 a:hover {
+  color: rgb(29, 149, 235);
+  font-size: 13px;
+}
+.mainbox .box2 {
+  display: grid;
+  grid-template-rows: repeat(8, 30px);
+  padding-left: 20px;
+}
+.mainbox .box2 h1 {
+  font-size: 20px;
+}
+.mainbox .box2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+.mainbox .box2 a:hover {
+  color: rgb(29, 149, 235);
+  font-size: 13px;
+}
+.mainbox .box3 {
+  display: grid;
+  grid-template-rows: repeat(8, 30px);
+  padding-left: 20px;
+}
+.mainbox .box3 h1 {
+  font-size: 20px;
+}
+.mainbox .box3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+.mainbox .box3 a:hover {
+  color: rgb(29, 149, 235);
+  font-size: 13px;
+}
+.mainbox .box4 {
+  display: grid;
+  grid-template-rows: repeat(8, 30px);
+  padding-left: 20px;
+}
+.mainbox .box4 h1 {
+  font-size: 20px;
+}
+.mainbox .box4 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+.mainbox .box4 a:hover {
+  color: rgb(29, 149, 235);
+  font-size: 13px;
+}
+
+footer a {
+  text-decoration: none;
+  size: 12px;
+  color: lightseagreen;
+}
+footer a i {
+  font-size: 15px;
+}
+footer .foot {
+  height: 300px;
+  width: 100%;
+  display: grid;
+  border-top: 1px solid black;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .foot .foot2 {
+  display: grid;
+  grid-template-rows: repeat(8, 30px);
+  padding-left: 20px;
+}
+footer .foot .foot2 h1 {
+  font-size: 20px;
+}
+footer .foot .foot2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .foot .foot2 a:hover {
+  color: rgb(29, 149, 235);
+  font-size: 13px;
+}
+footer .foot .foot3 {
+  display: grid;
+  grid-template-rows: repeat(8, 30px);
+  padding-left: 20px;
+}
+footer .foot .foot3 h1 {
+  font-size: 20px;
+}
+footer .foot .foot3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+footer .foot .foot3 a:hover {
+  color: rgb(29, 149, 235);
+  font-size: 13px;
+}
+footer .foot .foot1 p {
+  width: 100%;
+  height: 20px;
+  font-size: 10px;
+  margin-left: 30px;
+}
+footer .foot .foot1 img {
+  height: 50px;
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.foot4 {
+  text-align: center;
+}
+.foot4 h6 {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.foot4 a .download {
+  height: 30px;
+  width: 80px;
+  background-color: rgb(237, 222, 222);
+  border-radius: 20px;
+  margin-left: 150px;
+}
+.foot4 a .download i {
+  margin-top: 8px;
+}
+
+@media (max-width: 451px) {
+  nav .nav1 img {
+    width: 100px;
+  }
+  nav .nav1 input {
+    width: 200px;
+  }
+  nav .nav1 .rightnavicon {
+    margin-left: 30px;
+  }
+  nav .nav1 .rightnavicon i {
+    font-size: 15px;
+  }
+  nav .nav1 .rightnavicon span {
+    display: none;
+  }
+  nav .nav2 {
+    gap: 15px;
+  }
+  nav .nav2 a {
+    font-size: 10px;
+  }
+  nav .nav2 span {
+    display: none;
+  }
+  .main {
+    height: 1200px;
+    width: 450px;
+    background-color: rgb(228, 246, 251);
+    background-size: contain;
+  }
+  .main .slide {
+    height: 300px;
+    width: 450px;
+    margin-top: 1px;
+    background-size: contain;
+  }
+  .main .box {
+    margin-top: -120px;
+  }
+  .main .box .box1 {
+    width: 400px;
+    margin-left: -20px;
+    gap: 10px;
+  }
+  .main .box .box2 {
+    width: 400px;
+    margin-left: -20px;
+    gap: 10px;
+  }
+  .main .box .box3 {
+    width: 400px;
+    margin-left: -20px;
+    gap: 10px;
+  }
+  .main .box .box4 {
+    width: 400px;
+    margin-left: -20px;
+    gap: 10px;
+  }
+  .boxx {
+    margin-top: 1700px;
+    width: 450px;
+  }
+  .mainbox {
+    width: 450px;
+    margin-top: 1500px;
+  }
+  .mainbox .box1 h1 {
+    font-size: 10px;
+  }
+  .mainbox .box2 {
+    line-height: 10px;
+  }
+  .mainbox .box2 h1 {
+    font-size: 10px;
+  }
+  .mainbox .box3 {
+    line-height: 15px;
+  }
+  .mainbox .box3 h1 {
+    font-size: 10px;
+  }
+  .mainbox .box4 {
+    line-height: 20px;
+  }
+  .mainbox .box4 h1 {
+    font-size: 10px;
+  }
+  .foot {
+    width: 450px;
+  }
+  .foot .foot1 {
+    font-size: 10px;
+  }
+  .foot .foot2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 20px;
+  }
+  .foot .foot2 h1 {
+    font-size: 10px;
+  }
+  .foot .foot3 {
+    margin-left: 30px;
+    margin-top: 20px;
+    line-height: 10px;
+  }
+  .foot .foot3 h1 {
+    font-size: 10px;
+  }
+  .foot .foot4 {
+    margin-top: 200px;
+    margin-left: -300px;
+    padding-bottom: 50px;
+  }
+}/*# sourceMappingURL=mixer.css.map */
